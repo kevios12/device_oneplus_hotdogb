@@ -38,8 +38,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus7T \
-    TARGET_PRODUCT=OnePlus7T 
-    
+    TARGET_PRODUCT=OnePlus7T
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 # AncientOS Officialy
