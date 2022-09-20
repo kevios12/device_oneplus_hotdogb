@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Ancient stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_hotdogb
+PRODUCT_NAME := ancient_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -41,3 +41,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=OnePlus7T 
     
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# AncientOS Officialy
+ANCIENT_OFFICIAL := true
+
+# AncientOS extra UDFPS Animation
+EXTRA_UDFPS_ANIMATIONS := true
+
+# GApps AncientOS
+ANCIENT_GAPPS := true
