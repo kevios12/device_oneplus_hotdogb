@@ -50,3 +50,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 
 # GApps AncientOS
 ANCIENT_GAPPS := true
+
+# OOS Stuff
+TARGET_SHIP_OOSCAM := true
+TARGET_SHIP_OOSGALLERY := true
