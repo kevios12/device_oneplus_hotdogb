@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common AncientOS stuff.
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_hotdogb
+PRODUCT_NAME := ancient_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -32,6 +32,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 scr_resolution := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -39,3 +40,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=OnePlus7T
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# AncientOS Officialy Stuff
+ANCIENT_OFFICIAL := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_USES_BLUR := true
+ANCIENT_GAPPS := true
+
+# OOS Stuff
+TARGET_SHIP_OOSCAM := true
+TARGET_SHIP_OOSGALLERY := true
